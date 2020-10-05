@@ -1,7 +1,6 @@
 package com.example.helloandroid
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 
@@ -41,7 +40,7 @@ open class LogActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        Log.d(TAG, className + "onSaveInstanceState().")
+        Log.d(TAG, className + ".onSaveInstanceState().")
     }
 
     override fun onStop() {

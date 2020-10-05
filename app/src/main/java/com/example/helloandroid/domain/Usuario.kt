@@ -1,6 +1,7 @@
 package com.example.helloandroid.domain
+import java.io.Serializable
 
 data class Usuario (
-    private val nome: String,
-    private val email: String
-)
+    val nome: String,
+    val email: String
+) : Serializable

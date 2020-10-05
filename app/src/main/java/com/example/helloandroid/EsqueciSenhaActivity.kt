@@ -1,12 +1,12 @@
 package com.example.helloandroid
 
-import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
 import com.example.helloandroid.domain.EsqueciSenhaService
 import com.example.helloandroid.extensions.alert
 import kotlinx.android.synthetic.main.activity_esqueci_senha.*
 
-class EsqueciSenhaActivity : AppCompatActivity() {
+class EsqueciSenhaActivity : LogActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_esqueci_senha)
