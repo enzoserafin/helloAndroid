@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ImageView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:src="@drawable/background"
+    android:scaleType="fitXY"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="22sp"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:id="@+id/tLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite seu login"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senha" />
+    <EditText
+        android:id="@+id/tSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"/>
+        <ProgressBar
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:translationZ="2dp"
+            android:visibility="visible"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btEsqueciSenha"
+            android:text="Esqueci a senha"
+            android:textColor="#0000ff"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btCadastrar"
+            android:text="Cadastre-se"
+            android:textColor="#0000ff"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
